@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Modal login form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<button type="button" data-toggle="modal" data-target="#SignIn">Login</button>
+
+		<div id="SignIn" class="modal fade">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Login</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+
+					<div class="modal-body">
+						<form action="./" method="post">
+							<div class="group">
+								<i class="fa fa-user"></i>
+								<input type="name" class="control" placeholder="Enter your name" name="name" required />
+							</div>
+
+							<div class="group">
+								<i class="fa fa-key"></i>
+								<input type="password" class="control" placeholder="Enter your password" name="password" required />
+							</div>
+
+							<div class="group">
+								<input type="submit" class="submit submit-primary submit-lg" value="Log in" />
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<a href="#">Forgotten password?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
